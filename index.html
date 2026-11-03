@@ -1,586 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- Primary SEO -->
-  <title>Bihangesh Guha — Mathematics & Computing Student | Portfolio</title>
-  <meta name="description" content="Bihangesh Guha is a Mathematics and Computing student at IMA Bhubaneswar, specializing in cryptography, algebraic number theory, quantitative trading, and algorithm design. View projects, skills, and experience." />
-  <meta name="keywords" content="Bihangesh Guha, Bihangesh, Guha, Mathematics, Computing, IMA Bhubaneswar, Cryptography, Number Theory, Quantitative Trading, WorldQuant, IMC Prosperity, Portfolio, Student" />
-  <meta name="author" content="Bihangesh Guha" />
-  <meta name="robots" content="index, follow" />
-
-  <!-- Open Graph / Social Sharing -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Bihangesh Guha — Mathematics & Computing Student" />
-  <meta property="og:description" content="Portfolio of Bihangesh Guha — Mathematics & Computing student specializing in cryptography, algebraic number theory, and quantitative finance." />
-  <meta property="og:site_name" content="Bihangesh Guha Portfolio" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Bihangesh Guha — Mathematics & Computing Student" />
-  <meta name="twitter:description" content="Portfolio of Bihangesh Guha — Mathematics & Computing student at IMA Bhubaneswar." />
-
-  <!-- Structured Data (JSON-LD) — helps Google show rich results -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Bihangesh Guha",
-    "url": "https://sky-wth.github.io/portfolio/",
-    "jobTitle": "Mathematics & Computing Student",
-    "email": "2025b016.ima@iomaorissa.ac.in",
-    "telephone": "+917003375366",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Bhubaneswar",
-      "addressRegion": "Odisha",
-      "addressCountry": "India"
-    },
-    "alumniOf": {
-      "@type": "CollegeOrUniversity",
-      "name": "Institute of Mathematics and Applications, Bhubaneswar"
-    },
-    "knowsAbout": ["Cryptography", "Algebraic Number Theory", "Quantitative Trading", "Game Theory", "Algorithm Design", "Python", "C++", "Machine Learning"],
-    "sameAs": [
-      "https://linkedin.com/in/bihangesh-guha-497b49379"
-    ]
-  }
-  </script>
-
-  <link rel="stylesheet" href="style.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bihangesh Guha – Mathematics and Computing</title>
+<meta name="description" content="Portfolio of Bihangesh Guha: quantitative trading, number theory, cryptography and algorithm design.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fbfcfe; --panel:#eff3fa; --ink:#14213d; --muted:#5b6780; --line:#d5ddeb; --accent:#a4262c; --curve:#14213d;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#131a2b;--panel:#1b2540;--ink:#e8ecf6;--muted:#a0abc4;--line:#2a3658;--accent:#ff8a8f;--curve:#e8ecf6;color-scheme:dark}
+}
+:root[data-theme="dark"]{--bg:#131a2b;--panel:#1b2540;--ink:#e8ecf6;--muted:#a0abc4;--line:#2a3658;--accent:#ff8a8f;--curve:#e8ecf6;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 19px/1.65 "STIX Two Text",Georgia,"Times New Roman",serif}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.layout{display:grid;grid-template-columns:300px 1fr;min-height:100vh}
+aside{background:var(--panel);border-right:1px solid var(--line);padding:48px 28px;position:sticky;top:0;align-self:start;height:100vh;overflow:auto;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:15px;line-height:1.5}
+aside h1{font:600 1.7rem/1.15 "STIX Two Text",Georgia,serif;margin:0 0 8px}
+aside p{margin:0 0 20px;color:var(--muted)}
+nav ul{list-style:none;padding:0;margin:0 0 24px}
+nav li{margin:0}
+nav a{display:block;padding:5px 0;color:var(--ink);text-decoration:none;border-left:2px solid transparent;padding-left:12px;margin-left:-12px}
+nav a:hover{border-left-color:var(--accent);color:var(--accent)}
+.contact a{display:block;margin-bottom:4px}
+.curve{margin-top:28px}
+.curve canvas{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:6px;background:var(--bg)}
+.curve label{display:block;color:var(--muted);font-size:13px;margin-top:8px}
+.curve input{width:100%;accent-color:var(--accent)}
+main{padding:56px 48px 72px;max-width:820px}
+section{margin-bottom:56px}
+h2{font:600 1.7rem/1.2 "STIX Two Text",Georgia,serif;margin:0 0 20px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+h3{font:600 1.2rem/1.3 "STIX Two Text",Georgia,serif;margin:0}
+.intro{font-size:1.3rem;line-height:1.55;margin:0 0 56px}
+.entry{margin-bottom:28px;padding-left:18px;border-left:3px solid var(--line)}
+.entry.hl{border-left-color:var(--accent)}
+.meta{font-family:Inter,system-ui,sans-serif;font-size:14px;color:var(--muted);margin:2px 0 8px}
+.entry p{margin:0 0 8px}
+ul{margin:6px 0 0;padding-left:1.1em}
+li{margin-bottom:6px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:10px 0 0}
+.chips li{margin:0;font-family:Inter,system-ui,sans-serif;font-size:13px;padding:2px 10px;border:1px solid var(--line);border-radius:4px;color:var(--muted)}
+.topic{margin-bottom:18px}
+.topic i{color:var(--muted)}
+dl{margin:0}
+dt{font-weight:600;margin-top:12px}
+dd{margin:0;color:var(--muted)}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr}
+  aside{position:static;height:auto;border-right:0;border-bottom:1px solid var(--line);padding:32px 24px}
+  nav ul{display:flex;flex-wrap:wrap;gap:4px 18px}
+  nav a{border-left:0;padding-left:0;margin-left:0}
+  .curve{max-width:300px}
+  main{padding:36px 24px 56px}
+  body{font-size:18px}
+}
+</style>
 </head>
 <body>
-
-  <!-- Background particle canvas -->
-  <canvas id="bg-canvas"></canvas>
-
-  <!-- ========== NAVIGATION ========== -->
-  <nav class="navbar" id="navbar">
-    <div class="container nav-inner">
-      <a href="#" class="nav-logo">BG.</a>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#studies">Studies</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
+<div class="layout">
+<aside>
+  <h1>Bihangesh Guha</h1>
+  <p>Mathematics and computing student, IMA Bhubaneswar.</p>
+  <nav aria-label="Sections">
+    <ul>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#study">Independent study</a></li>
+      <li><a href="#background">Education and skills</a></li>
+    </ul>
   </nav>
+  <div class="contact">
+    <a href="mailto:bihangeshguha1@gmail.com">bihangeshguha1@gmail.com</a>
+    <a href="https://linkedin.com/in/bihangesh-guha-497b49379">LinkedIn</a>
+    <a href="https://github.com/Sky-WTH">GitHub</a>
+  </div>
+  <div class="curve">
+    <canvas id="cv" width="300" height="300" role="img" aria-label="Times table circle: points on a circle joined by multiplying each by a chosen number, modulo 200"></canvas>
+    <label for="k">Multiply by <output id="kv">2</output>, mod 200. Drag the slider.</label>
+    <input id="k" type="range" min="2" max="100" step="0.1" value="2">
+  </div>
+</aside>
 
-  <!-- ========== HERO ========== -->
-  <section class="hero" id="hero">
-    <div class="container hero-content">
-      <div class="hero-badge">
-        <span class="dot"></span>
-        Open to opportunities
-      </div>
-      <h1>
-        Hi, I'm <span class="gradient-text">Bihangesh Guha</span>
-      </h1>
-      <p class="hero-subtitle">
-        Mathematics &amp; Computing student exploring the deep intersections of
-        <strong>Cryptography</strong>, <strong>Number Theory</strong>, and <strong>Quantitative Finance</strong>.
-      </p>
-      <div class="hero-buttons">
-        <a href="#projects" class="btn btn-primary">View Projects ↓</a>
-        <a href="#contact" class="btn btn-outline">Get in Touch</a>
-      </div>
+<main>
+  <p class="intro">I study mathematics and computing. I build trading signals, read number theory and cryptography, and write the algorithms that connect them.</p>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="entry">
+      <h3>Quantitative Trading Intern</h3>
+      <p class="meta">IMC Prosperity, Bhubaneswar. April – June 2026</p>
+      <ul>
+        <li>Wrote Python signal-processing programs to find market break-points and risk-reward ratios.</li>
+        <li>Worked with Team “Stochastic Slayers” on algorithms rooted in number theory and game theory for high-frequency trading.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <h3>Alpha Researcher</h3>
+      <p class="meta">WorldQuant BRAIN, remote. 2026 – present</p>
+      <ul>
+        <li>Designed multi-factor equity alphas that combine mean-reversion (return z-score) and momentum (price-to-MA, volume-VWAP correlation) signals, with industry neutralization.</li>
+        <li>Tuned decay, truncation and neutralization to raise Fitness and Sharpe while keeping turnover and self-correlation under the limits. Reached Sharpe above 1.5 in-sample.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <h3>Intern</h3>
+      <p class="meta">LaunchED Global, Bangalore. February – April 2026</p>
+      <ul><li>Completed an intensive Data Structures and Algorithms program and applied it to optimize project performance.</li></ul>
     </div>
   </section>
 
-  <!-- ========== ABOUT ========== -->
-  <section class="section" id="about">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">About Me</span>
-        <h2 class="section-title">The Story So Far</h2>
-        <div class="section-line"></div>
-      </div>
-
-      <div class="about-grid">
-        <!-- Left: Visual card -->
-        <div class="about-visual reveal">
-          <div class="about-card-main">
-            <h3 style="font-size:1.1rem; margin-bottom:6px;">📍 Bhubaneswar, Odisha</h3>
-            <p style="color:var(--text-secondary); font-size:0.88rem; margin-bottom:20px;">
-              Institute of Mathematics and Applications<br/>
-              B.Sc (Hons) — Mathematics &amp; Computing<br/>
-              <span style="color:var(--accent-cyan); font-weight:600;">2025 – 2029</span>
-            </p>
-            <div class="about-icon-grid">
-              <div class="about-icon-item">
-                <div class="icon">🔐</div>
-                <div class="label">Cryptography</div>
-              </div>
-              <div class="about-icon-item">
-                <div class="icon">🔢</div>
-                <div class="label">Number Theory</div>
-              </div>
-              <div class="about-icon-item">
-                <div class="icon">📈</div>
-                <div class="label">Quant Finance</div>
-              </div>
-              <div class="about-icon-item">
-                <div class="icon">🧠</div>
-                <div class="label">Machine Learning</div>
-              </div>
-              <div class="about-icon-item">
-                <div class="icon">🎲</div>
-                <div class="label">Game Theory</div>
-              </div>
-              <div class="about-icon-item">
-                <div class="icon">⚙️</div>
-                <div class="label">Algorithms</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right: Text -->
-        <div class="about-text reveal reveal-delay-1">
-          <h3>Where Math Meets Code</h3>
-          <p>
-            I'm a first-year student at the <strong>Institute of Mathematics and Applications, Bhubaneswar</strong>,
-            pursuing a B.Sc (Hons) in Mathematics &amp; Computing. My academic focus spans Abstract Algebra,
-            Discrete Structures, and Algorithmic Complexity — with coursework in Real Analysis, Linear Algebra,
-            and Object-Oriented Programming.
-          </p>
-          <p>
-            Beyond the classroom, I'm deeply invested in independent study — from Algebraic Number Theory
-            and Class Field Theory (Serge Lang, Harvey Cohn) to Computational Number Theory and modern
-            Cryptographic constructions. I believe in bridging rigorous mathematical thinking with real-world
-            computation, whether that's building biometric systems or analyzing stock market breakpoints.
-          </p>
-          <div class="about-stats">
-            <div class="stat-item">
-              <div class="stat-number">3+</div>
-              <div class="stat-label">Projects Built</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-number">3</div>
-              <div class="stat-label">Internships</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-number">5+</div>
-              <div class="stat-label">Books Studied</div>
-            </div>
-          </div>
-        </div>
-      </div>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="entry hl">
+      <h3>Campus biometric entry system</h3>
+      <p class="meta">Team project, CS Club, under Prof. Sudhakar Sahoo. Research paper in preparation</p>
+      <p>A dual-language fingerprint gate-management system. It is complete, and a paper on it is being prepared for submission.</p>
+      <ul>
+        <li>Built the Python application layer, including the state-transition logic that derives each student’s live IN/OUT status from residency type and scan sequence.</li>
+        <li>Built the leave (HOME) approval workflow and the curfew and “still outside” reporting, connected to a C++ database engine that does the fingerprint template matching.</li>
+      </ul>
+      <ul class="chips"><li>C++</li><li>Python</li></ul>
+      <p style="margin-top:10px"><a href="https://github.com/Sky-WTH/FingerPrint-Scanner-IN-Out-System">View on GitHub</a></p>
+    </div>
+    <div class="entry hl">
+      <h3>Stock market break point analyzer</h3>
+      <p class="meta">Solo project. March 2026</p>
+      <ul>
+        <li>Built a tool that predicts price reversals using state-transition logic and combinatorial algorithms.</li>
+        <li>Analyzed BSE and NSE order book depth (bid and ask volume) to model structural factors in share valuation.</li>
+      </ul>
+      <ul class="chips"><li>Python</li><li>NumPy</li><li>Financial APIs</li></ul>
+    </div>
+    <div class="entry hl">
+      <h3>Rubik’s Cube manipulator</h3>
+      <p class="meta">Solo project. February 2026</p>
+      <ul>
+        <li>Built a generalized solver that uses group theory to map cube states to permutations.</li>
+        <li>Wrote a sticker-mapping method that reproduces real cube states digitally.</li>
+      </ul>
+      <ul class="chips"><li>Python</li><li>Kociemba algorithm</li></ul>
     </div>
   </section>
 
-  <!-- ========== SKILLS ========== -->
-  <section class="section" id="skills">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Skills &amp; Tools</span>
-        <h2 class="section-title">Technical Arsenal</h2>
-        <div class="section-line"></div>
-      </div>
-
-      <div class="skills-grid">
-        <!-- Coding Languages -->
-        <div class="skill-card reveal">
-          <div class="skill-card-header">
-            <div class="skill-card-icon cyan">💻</div>
-            <div>
-              <div class="skill-card-title">Core Languages</div>
-            </div>
-          </div>
-          <div class="skill-tags">
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">C++</span>
-            <span class="skill-tag">SQL</span>
-            <span class="skill-tag">C</span>
-            <span class="skill-tag">Java</span>
-            <span class="skill-tag">JavaScript</span>
-          </div>
-        </div>
-
-        <!-- Tools & Formats -->
-        <div class="skill-card reveal reveal-delay-1">
-          <div class="skill-card-header">
-            <div class="skill-card-icon purple">🛠️</div>
-            <div>
-              <div class="skill-card-title">Tools &amp; Formats</div>
-            </div>
-          </div>
-          <div class="skill-tags">
-            <span class="skill-tag">LaTeX</span>
-            <span class="skill-tag">Markdown</span>
-            <span class="skill-tag">NumPy</span>
-            <span class="skill-tag">Financial APIs</span>
-            <span class="skill-tag">Git</span>
-          </div>
-        </div>
-
-        <!-- Domains -->
-        <div class="skill-card reveal reveal-delay-2">
-          <div class="skill-card-header">
-            <div class="skill-card-icon pink">🧮</div>
-            <div>
-              <div class="skill-card-title">Domains &amp; Interests</div>
-            </div>
-          </div>
-          <div class="skill-tags">
-            <span class="skill-tag">Cryptography</span>
-            <span class="skill-tag">Number Theory</span>
-            <span class="skill-tag">Game Theory</span>
-            <span class="skill-tag">Quant Trading</span>
-            <span class="skill-tag">Algorithm Design</span>
-            <span class="skill-tag">Stochastic Processes</span>
-          </div>
-        </div>
-
-        <!-- Currently Learning -->
-        <div class="skill-card reveal reveal-delay-3">
-          <div class="skill-card-header">
-            <div class="skill-card-icon cyan">📚</div>
-            <div>
-              <div class="skill-card-title">Currently Learning</div>
-            </div>
-          </div>
-          <div class="skill-tags">
-            <span class="skill-tag">Neural Networks</span>
-            <span class="skill-tag">Machine Learning</span>
-            <span class="skill-tag">Deep Learning</span>
-            <span class="skill-tag">Model Interpretability</span>
-            <span class="skill-tag">Black-box Models</span>
-          </div>
-        </div>
-      </div>
-    </div>
+  <section id="study">
+    <h2>Independent study</h2>
+    <div class="topic"><h3>Algebraic and advanced number theory <i>(ongoing)</i></h3><p>Dedekind domains, ideal class groups and valuations, then Class Field Theory, Abelian extensions and geometric methods for binary quadratic forms.</p></div>
+    <div class="topic"><h3>Foundational number theory <i>(completed)</i></h3><p>Diophantine equations, the Chinese Remainder Theorem, quadratic reciprocity and combinatorial principles.</p></div>
+    <div class="topic"><h3>Cryptography <i>(ongoing)</i></h3><p>Block ciphers, public-key schemes (RSA, ElGamal) and hash functions, with their number-theoretic foundations.</p></div>
+    <div class="topic"><h3>Computational number theory <i>(ongoing)</i></h3><p>Primality testing, integer factorization and discrete logarithms, the algorithms behind modern cryptography.</p></div>
+    <div class="topic"><h3>Neural networks and machine learning <i>(introductory)</i></h3><p>Network architectures and learning algorithms, with a growing interest in interpretability and how black-box models behave.</p></div>
   </section>
 
-  <!-- ========== PROJECTS ========== -->
-  <section class="section" id="projects">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Projects</span>
-        <h2 class="section-title">Things I've Built</h2>
-        <div class="section-line"></div>
-      </div>
-
-      <div class="projects-grid">
-        <!-- Project 1 -->
-        <div class="project-card reveal">
-          <div class="project-card-header">
-            <div class="project-icon cyan-bg">🔒</div>
-            <span class="project-status ongoing">Ongoing</span>
-          </div>
-          <div class="project-card-body">
-            <h3>Fingerprint Scanner</h3>
-            <div class="project-sub">Campus Biometric Entry System — under Prof. Sudhakar Sahoo, IMA</div>
-            <p>
-              Contributed to a dual-language (C++/Python) biometric gate-management system,
-              designing state-transition logic for real-time IN/OUT status tracking, leave-approval
-              workflows, and curfew-monitoring interfaces with a C++ database engine for
-              fingerprint template matching.
-            </p>
-            <div class="project-tech">
-              <span>C++</span>
-              <span>Python</span>
-              <span>Biometrics</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="project-card reveal reveal-delay-1">
-          <div class="project-card-header">
-            <div class="project-icon purple-bg">📊</div>
-            <span class="project-status completed">Completed</span>
-          </div>
-          <div class="project-card-body">
-            <h3>Stock Market Break Point Analyzer</h3>
-            <div class="project-sub">March 2026</div>
-            <p>
-              Engineered a predictive tool for price reversals using state-transition logic and
-              combinatorial algorithms. Analyzed BSE and NSE order book depth (Bid/Ask volume)
-              to model structural factors affecting share valuation.
-            </p>
-            <div class="project-tech">
-              <span>Python</span>
-              <span>NumPy</span>
-              <span>Financial APIs</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="project-card reveal reveal-delay-2">
-          <div class="project-card-header">
-            <div class="project-icon pink-bg">🧩</div>
-            <span class="project-status completed">Completed</span>
-          </div>
-          <div class="project-card-body">
-            <h3>Rubik's Cube Manipulator</h3>
-            <div class="project-sub">February 2026</div>
-            <p>
-              Developed a generalized solver utilizing Group Theory principles to map cube states
-              into mathematical permutations. Implemented a specialized sticker-mapping method
-              to replicate real-world cube states into a digital environment using the Kociemba algorithm.
-            </p>
-            <div class="project-tech">
-              <span>Python</span>
-              <span>Kociemba</span>
-              <span>Group Theory</span>
-            </div>
-          </div>
-        </div>
-      </div>
+  <section id="background">
+    <h2>Education and skills</h2>
+    <div class="entry">
+      <h3>B.Sc. (Hons) in Mathematics and Computing</h3>
+      <p class="meta">Institute of Mathematics and Applications, Bhubaneswar. August 2025 – July 2029 (expected)</p>
+      <p>Core focus on abstract algebra, discrete structures and algorithmic complexity. Coursework includes real analysis, linear algebra, object-oriented programming and discrete mathematics.</p>
     </div>
+    <dl>
+      <dt>Languages</dt><dd>Python, SQL, C++, C, Java, JavaScript</dd>
+      <dt>Tools</dt><dd>LaTeX, Markdown, NumPy</dd>
+      <dt>Interests</dt><dd>Cryptography, algebraic number theory, game theory, quantitative trading, algorithm design, stochastic processes</dd>
+    </dl>
   </section>
+</main>
+</div>
 
-  <!-- ========== EXPERIENCE ========== -->
-  <section class="section" id="experience">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Experience</span>
-        <h2 class="section-title">Where I've Worked</h2>
-        <div class="section-line"></div>
-      </div>
-
-      <div class="timeline">
-        <!-- WQ BRAIN -->
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-date">2026 – Present</div>
-            <h3>Alpha Researcher</h3>
-            <div class="company">WorldQuant BRAIN — Remote</div>
-            <ul>
-              <li>Designed multi-factor equity alphas combining mean-reversion and momentum signals with industry neutralization.</li>
-              <li>Tuned decay, truncation, and neutralization to raise Fitness/Sharpe while cutting turnover and self-correlation, reaching Sharpe&nbsp;>&nbsp;1.5 in-sample.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- IMC Prosperity -->
-        <div class="timeline-item reveal reveal-delay-1">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-date">April 2026 – June 2026</div>
-            <h3>Quantitative Trading Intern</h3>
-            <div class="company">IMC Prosperity — Bhubaneswar, Odisha</div>
-            <ul>
-              <li>Developed Python-based signal processing programs to identify market break-points and risk-reward ratios.</li>
-              <li>Collaborated with Team "Stochastic Slayers" to implement algorithms rooted in number theory and game theory for high-frequency trading.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- LaunchED -->
-        <div class="timeline-item reveal reveal-delay-2">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-date">Feb 2026 – April 2026</div>
-            <h3>Intern</h3>
-            <div class="company">LaunchED Global — Bangalore, Karnataka</div>
-            <ul>
-              <li>Completed an intensive Data Structures and Algorithms (DSA) program, applying advanced computational logic to optimize project performance.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Education -->
-        <div class="timeline-item reveal reveal-delay-3">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-date">Aug 2025 – July 2029</div>
-            <h3>B.Sc (Hons) Mathematics &amp; Computing</h3>
-            <div class="company">Institute of Mathematics and Applications — Bhubaneswar</div>
-            <ul>
-              <li>Core focus on Abstract Algebra, Discrete Structures, and Algorithmic Complexity.</li>
-              <li>Coursework: Real Analysis, Linear Algebra, OOP, Discrete Math.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Higher Secondary -->
-        <div class="timeline-item reveal reveal-delay-4">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-date">May 2023 – April 2025</div>
-            <h3>Higher Secondary (Class XII)</h3>
-            <div class="company">Morning Bells Academy</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== INDEPENDENT STUDIES ========== -->
-  <section class="section" id="studies">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Independent Study</span>
-        <h2 class="section-title">Self-Directed Learning</h2>
-        <div class="section-line"></div>
-      </div>
-
-      <div class="studies-grid">
-        <div class="study-card reveal">
-          <div class="study-card-header">
-            <h4>Algebraic &amp; Advanced Number Theory</h4>
-            <span class="study-status ongoing">Ongoing</span>
-          </div>
-          <div class="study-author">Serge Lang, Harvey Cohn</div>
-          <p>
-            Studying algebraic numbers, Dedekind domains, ideal class groups, valuations, Class Field Theory,
-            and Abelian extensions. Applying geometric methods to binary quadratic forms.
-          </p>
-        </div>
-
-        <div class="study-card reveal reveal-delay-1">
-          <div class="study-card-header">
-            <h4>Foundational Number Theory</h4>
-            <span class="study-status completed">Completed</span>
-          </div>
-          <div class="study-author">David Burton</div>
-          <p>
-            Mastered Diophantine equations, Chinese Remainder Theorem, and the Law of Quadratic Reciprocity.
-            Explored combinatorial principles through <em>Excursions in Mathematics</em>.
-          </p>
-        </div>
-
-        <div class="study-card reveal reveal-delay-2">
-          <div class="study-card-header">
-            <h4>Cryptography: Theory &amp; Practice</h4>
-            <span class="study-status ongoing">Ongoing</span>
-          </div>
-          <div class="study-author">Douglas R. Stinson</div>
-          <p>
-            Studying classical and modern cryptographic constructions — block ciphers, public-key schemes (RSA, ElGamal),
-            and hash functions alongside their number-theoretic foundations.
-          </p>
-        </div>
-
-        <div class="study-card reveal reveal-delay-3">
-          <div class="study-card-header">
-            <h4>Computational Number Theory</h4>
-            <span class="study-status ongoing">Ongoing</span>
-          </div>
-          <div class="study-author">Abhijit Das</div>
-          <p>
-            Algorithmic approaches to primality testing, integer factorization, and discrete logarithms — connecting
-            classical number theory to modern cryptographic algorithms.
-          </p>
-        </div>
-
-        <div class="study-card reveal reveal-delay-4">
-          <div class="study-card-header">
-            <h4>Neural Networks &amp; Learning Machines</h4>
-            <span class="study-status intro">Introductory</span>
-          </div>
-          <div class="study-author">Simon Haykin</div>
-          <p>
-            Building foundational understanding of neural network architectures and learning algorithms,
-            with broader interest in machine learning and deep learning.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== CONTACT ========== -->
-  <section class="section" id="contact">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Contact</span>
-        <h2 class="section-title">Let's Connect</h2>
-        <div class="section-line"></div>
-      </div>
-
-      <div class="contact-grid">
-        <!-- Left: info -->
-        <div class="contact-info reveal">
-          <h3>Get in Touch</h3>
-          <p>
-            Whether it's a research collaboration, a project idea, or just a conversation about math and code —
-            I'd love to hear from you.
-          </p>
-          <div class="contact-links">
-            <a href="mailto:2025b016.ima@iomaorissa.ac.in" class="contact-link-item" id="contact-email">
-              <div class="contact-link-icon">✉️</div>
-              <div class="contact-link-text">
-                <div class="label">Email</div>
-                <div class="value">2025b016.ima@iomaorissa.ac.in</div>
-              </div>
-            </a>
-            <a href="tel:+917003375366" class="contact-link-item" id="contact-phone">
-              <div class="contact-link-icon">📞</div>
-              <div class="contact-link-text">
-                <div class="label">Phone</div>
-                <div class="value">+91 7003375366</div>
-              </div>
-            </a>
-            <a href="https://linkedin.com/in/bihangesh-guha-497b49379" target="_blank" rel="noopener noreferrer" class="contact-link-item" id="contact-linkedin">
-              <div class="contact-link-icon">🔗</div>
-              <div class="contact-link-text">
-                <div class="label">LinkedIn</div>
-                <div class="value">Bihangesh Guha</div>
-              </div>
-            </a>
-            <div class="contact-link-item" id="contact-location">
-              <div class="contact-link-icon">📍</div>
-              <div class="contact-link-text">
-                <div class="label">Location</div>
-                <div class="value">Bhubaneswar, Odisha, India</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right: form -->
-        <div class="contact-form-wrapper reveal reveal-delay-1">
-          <h3>Send a Message</h3>
-          <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
-            <!-- Web3Forms access key — get yours free at https://web3forms.com -->
-            <input type="hidden" name="access_key" value="94924fce-2606-4c1b-8880-7381221a28d9" />
-            <input type="hidden" name="subject" value="New message from your portfolio!" />
-            <input type="hidden" name="from_name" value="Portfolio Contact Form" />
-            <!-- Honeypot spam protection -->
-            <input type="checkbox" name="botcheck" style="display:none" />
-            <div class="form-group">
-              <label for="name">Your Name</label>
-              <input type="text" id="name" name="name" placeholder="John Doe" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Your Email</label>
-              <input type="email" id="email" name="email" placeholder="john@example.com" required />
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Hi Bihangesh, I wanted to talk about..." required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary form-submit">Send Message →</button>
-          </form>
-          <div id="form-status" style="margin-top:16px; text-align:center; font-size:0.9rem; font-weight:500; display:none;"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== FOOTER ========== -->
-  <footer class="footer">
-    <div class="container">
-      <p>
-        Designed &amp; built by <span class="highlight">Bihangesh Guha</span> · &copy; 2026
-      </p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+<script>
+(function(){
+  var c=document.getElementById("cv"),ctx=c.getContext("2d"),k=document.getElementById("k"),kv=document.getElementById("kv");
+  var N=200,R=c.width/2-8,mid=c.width/2;
+  function pt(i){var a=2*Math.PI*i/N-Math.PI/2;return [mid+R*Math.cos(a),mid+R*Math.sin(a)];}
+  function draw(){
+    var m=parseFloat(k.value);kv.textContent=m.toFixed(1).replace(/\.0$/,"");
+    var s=getComputedStyle(document.documentElement);
+    ctx.clearRect(0,0,c.width,c.height);
+    ctx.strokeStyle=s.getPropertyValue("--line").trim();ctx.lineWidth=1;
+    ctx.beginPath();ctx.arc(mid,mid,R,0,6.2832);ctx.stroke();
+    ctx.strokeStyle=s.getPropertyValue("--accent").trim();ctx.globalAlpha=.55;ctx.lineWidth=.6;
+    ctx.beginPath();
+    for(var i=0;i<N;i++){var a=pt(i),b=pt((i*m)%N);ctx.moveTo(a[0],a[1]);ctx.lineTo(b[0],b[1]);}
+    ctx.stroke();ctx.globalAlpha=1;
+  }
+  k.addEventListener("input",draw);draw();
+  try{window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",draw);}catch(e){}
+})();
+</script>
 </body>
 </html>
